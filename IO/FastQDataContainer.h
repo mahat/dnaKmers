@@ -13,13 +13,14 @@
 class FastQDataContainer {
 public:
     std::vector<std::list<std::string>> split(int n);
-    const std::list<std::string> &getData() const;
+    std::vector<std::string> &getData() ;
     friend std::istream& operator>>(std::istream& is, FastQDataContainer& container);
     void readFromFile(std::string fname);
+    std::vector<int> getDataBounds(int parts);
     FastQDataContainer();
 
 private:
-    std::list<std::string> data;
+    std::vector<std::string> data;
 };
 
 

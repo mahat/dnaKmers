@@ -15,7 +15,7 @@ protected:
     FastQDataContainer container;
 public:
     CounterBase(const FastQDataContainer &container);
-    virtual std::map<std::string, int> count();
+    virtual std::vector<std::pair<std::string,int>> getTopN(int n);
 };
 
 
