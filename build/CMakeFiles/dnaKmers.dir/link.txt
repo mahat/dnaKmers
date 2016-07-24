@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread   CMakeFiles/dnaKmers.dir/main.cpp.o CMakeFiles/dnaKmers.dir/IO/FastQDataContainer.cpp.o CMakeFiles/dnaKmers.dir/Process/CounterBase.cpp.o CMakeFiles/dnaKmers.dir/Process/MultiThreadCounting.cpp.o  -o dnaKmers -lpthread 
